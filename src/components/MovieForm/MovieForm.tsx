@@ -26,7 +26,7 @@ const MovieForm: React.FC<Props> = ({onSubmit}) => {
     <form onSubmit={onFormSubmit} className="row justify-content-center">
       <div className="col-4">
         <input type="text" className="form-control" id="inputSearch" name="title" value={movieForm.title}
-               onChange={changeMovieForm}/>
+               onChange={changeMovieForm} required/>
       </div>
       <div className="col-auto">
         <button type="submit" className="btn btn-primary mb-3">Add</button>
